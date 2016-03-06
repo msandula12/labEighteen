@@ -20,7 +20,6 @@ app = angular.module('angularApp')
 // 	var lower = word.toLowerCase();
 // 	var reverse = lower.split("").reverse().join("");
 // 	if (lower === reverse) {
-// 		return word + " is a palindrome.";
 // 	} else {
 // 		return word + " is not a palindrome.";
 // 	}

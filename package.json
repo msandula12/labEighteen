@@ -1,0 +1,19 @@
+{
+  "name": "lab18",
+  "version": "1.0.0",
+  "description": "Angular app group project for Grand Circus Front End Bootcamp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msandula12/labEighteen.git"
+  },
+  "author": "Mike Sandula, Kwaku Osei-Bonsu, Amanda Van Huis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msandula12/labEighteen/issues"
+  },
+  "homepage": "https://github.com/msandula12/labEighteen#readme"
+}

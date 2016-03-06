@@ -1,4 +1,5 @@
 angular.module('angularApp')
+
 .controller('linkedinController', ['$scope','linkedinService', function($scope, linkedinService){
 
 	$scope.links = [{

@@ -1,5 +1,5 @@
 angular.module('angularApp')
-.controller('linkedinController', ['$scope','linkedinService'],function($scope, linkedinService){
+.controller('linkedinController', ['$scope','linkedinService', function($scope, linkedinService){
 
 	$scope.links = [{
 		name: 'Kwaku Osei-Bonsu',
@@ -13,7 +13,7 @@ angular.module('angularApp')
 		name: 'Michael Sandula',
 		Url:'https://www.linkedin.com/in/mikesandula'
 	}];
-)};
+}]);
 
 // Still needs:
 

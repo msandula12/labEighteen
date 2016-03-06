@@ -5,6 +5,10 @@ angular.module('angularApp', ['ngRoute'])
 		templateUrl: 'partials/palindrome.html',
 		controller: 'palindromeController'
 	})
+	.when('/view2', {
+		templateUrl: 'partials/linkedin.html',
+		controller: 'linkedinController'
+	})
 	.otherwise({redirectTo: '/'});
 });
 

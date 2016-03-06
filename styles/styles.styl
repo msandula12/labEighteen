@@ -1,3 +1,44 @@
-/* STYLES GO HERE */
+pageColor = #7ed488
+pageFont = Verdana
+buttonColor = #fb4c00
+
+/* General stylings */
 body
-	background-color grey
+	background-color pageColor
+	font-family pageFont
+	margin 0
+	padding 20px
+h1 
+	font-family 'Unica One', cursive
+	font-size 4em
+	margin 0px 0px 20px 0px
+#navigation
+	margin-bottom 30px
+a
+	padding 8px
+	background-color darken(pageColor, 30%)
+	color white
+	text-decoration none
+	text-transform uppercase
+a:hover
+	background-color darken(pageColor, 50%)
+
+/* Palindrome page */
+input
+	display block
+	margin 10px 0px
+	width 330px
+	height 20px
+
+/* LinkedIn page */
+button
+	padding 8px
+	background-color buttonColor
+	border none
+	font-family pageFont
+	text-transform uppercase
+	font-weight bold
+button:hover
+	background-color darken(buttonColor, 20%)
+	cursor pointer
+	color white

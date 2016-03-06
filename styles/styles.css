@@ -1,4 +1,46 @@
-/* STYLES GO HERE */
+/* General stylings */
 body {
-  background-color: #808080;
+  background-color: #7ed488;
+  font-family: Verdana;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  font-family: 'Unica One', cursive;
+  font-size: 4em;
+  margin: 0px 0px 20px 0px;
+}
+#navigation {
+  margin-bottom: 30px;
+}
+a {
+  padding: 8px;
+  background-color: #3bb149;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  background-color: #2a7f34;
+}
+/* Palindrome page */
+input {
+  display: block;
+  margin: 10px 0px;
+  width: 330px;
+  height: 20px;
+}
+/* LinkedIn page */
+button {
+  padding: 8px;
+  background-color: #fb4c00;
+  border: none;
+  font-family: Verdana;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #c93d00;
+  cursor: pointer;
+  color: #fff;
 }

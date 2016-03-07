@@ -3,16 +3,16 @@ app.controller('palindromeController', ['$scope', 'palindromeService', function(
 
 	$scope.palindrome = function() {
 		var word = $scope.word
-		var lower = word.toLowerCase();
+		var lower = word.toLowerCase().replace(/\s+/g, '');
 		var reverse = lower.split("").reverse().join("");
-		if (lower === reverse) {
-			return word + " is a palindrome.";
-		} else if {
-			return word + " is not a palindrome.";
-		} else {
-			return "You haven't typed in a Palindrome!";
+		if (lower.length > 2) {
+			if (lower === reverse) {
+				return word + " is a palindrome.";
+			} else {
+				return word + " is not a palindrome.";
+			}
 		}
-	}
+	}		
 }]);
 
 app.directive('placeWord', function(){
@@ -22,14 +22,3 @@ app.directive('placeWord', function(){
 		template: '<h3>{{palindrome()}}</h3>'
 	};
 });
-
-
-
-// function palindrome(word) {
-// 	var lower = word.toLowerCase();
-// 	var reverse = lower.split("").reverse().join("");
-// 	if (lower === reverse) {
-// 	} else {
-// 		return word + " is not a palindrome.";
-// 	}
-// }

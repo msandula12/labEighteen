@@ -1,8 +1,8 @@
 app = angular.module('angularApp')
 app.controller('palindromeController', ['$scope', 'palindromeService', function($scope, palindromeService){
-
+	$scope.word = "";
 	$scope.palindrome = function() {
-		var word = $scope.word
+		var word= $scope.word;
 		var lower = word.toLowerCase().replace(/\s+/g, '');
 		var reverse = lower.split("").reverse().join("");
 		if (lower.length > 2) {
@@ -19,6 +19,6 @@ app.directive('placeWord', function(){
 	return {
 		restrict: 'E',
 		replace: true,
-		template: '<h3>{{palindrome()}}</h3>'
+		template: "<h3>{{palindrome()}}</h3>"
 	};
 });

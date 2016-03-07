@@ -1,4 +1,4 @@
-angular.module('angularApp')
+angular.module('angularApp',[ng-animate])
 
 .controller('linkedinController', ['$scope','linkedinService', function($scope, linkedinService){
 

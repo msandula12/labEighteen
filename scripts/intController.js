@@ -3,24 +3,15 @@ app = angular.module('angularApp')
 
 	$scope.palindrome = function() {
 		var word = $scope.word
-		var lower = word.toLowerCase();
+		var lower = word.toLowerCase().replace(/\s+/g, '');
 		var reverse = lower.split("").reverse().join("");
-		if (lower === reverse) {
-			return word + " is a palindrome.";
-		} else {
-			return word + " is not a palindrome.";
+		if (lower.length > 2) {
+			if (lower === reverse) {
+				return word + " is a palindrome.";
+			} else {
+				return word + " is not a palindrome.";
+			}
 		}
 	}
 
 }]);
-
-
-
-// function palindrome(word) {
-// 	var lower = word.toLowerCase();
-// 	var reverse = lower.split("").reverse().join("");
-// 	if (lower === reverse) {
-// 	} else {
-// 		return word + " is not a palindrome.";
-// 	}
-// }

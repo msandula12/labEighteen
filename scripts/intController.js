@@ -1,5 +1,5 @@
 app = angular.module('angularApp')
-.controller('palindromeController', ['$scope', 'palindromeService', function($scope, palindromeService){
+app.controller('palindromeController', ['$scope', 'palindromeService', function($scope, palindromeService){
 
 	$scope.palindrome = function() {
 		var word = $scope.word
@@ -7,12 +7,21 @@ app = angular.module('angularApp')
 		var reverse = lower.split("").reverse().join("");
 		if (lower === reverse) {
 			return word + " is a palindrome.";
-		} else {
+		} else if {
 			return word + " is not a palindrome.";
+		} else {
+			return "You haven't typed in a Palindrome!";
 		}
 	}
-
 }]);
+
+app.directive('placeWord', function(){
+	return {
+		restrict: 'E',
+		replace: true,
+		template: '<h3>{{palindrome()}}</h3>'
+	};
+});
 
 
 

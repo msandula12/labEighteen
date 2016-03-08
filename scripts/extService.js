@@ -3,7 +3,7 @@ angular.module('angularApp')
 
 	return $http({
 		method: 'GET',
-		url: 'https://www.reddit.com/r/aww.json'
+		url: 'https://www.reddit.com/r/grilledcheese.json'
 	});
 
 }]);

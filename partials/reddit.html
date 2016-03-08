@@ -1,4 +1,7 @@
 <div ng-controller="redditController as main">
 	<!-- <a ng-href ="{{link}}" target ="_blank"/>Linkedin</a> -->
-	<p ng-repeat="post in main.posts">{{post.data.title}}</p>
+	<div ng-repeat="post in main.posts">
+		<h3>{{post.data.title}}</h3>
+		<img src="{{post.data.thumbnail}}"/>
+	</div>
 </div>

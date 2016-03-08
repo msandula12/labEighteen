@@ -6,4 +6,4 @@ angular.module('angularApp')
 		url: 'https://www.reddit.com/r/aww.json'
 	});
 
-}
+}]);

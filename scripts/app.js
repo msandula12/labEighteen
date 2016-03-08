@@ -6,8 +6,8 @@ angular.module('angularApp', ['ngRoute'])
 		controller: 'palindromeController'
 	})
 	.when('/view2', {
-		templateUrl: 'partials/linkedin.html',
-		controller: 'linkedinController'
+		templateUrl: 'partials/reddit.html',
+		controller: 'redditController'
 	})
 	.otherwise({redirectTo: '/'});
 });

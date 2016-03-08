@@ -1,8 +1,9 @@
 angular.module('angularApp')
-.factory('linkedinService', function(){
+.factory('redditService', ['$http', function($http){
 
-	return {
-		
-	};
+	return $http({
+		method: 'GET',
+		url: 'https://www.reddit.com/r/aww.json'
+	});
 
-});
+}

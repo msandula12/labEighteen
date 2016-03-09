@@ -8,7 +8,10 @@ angular.module('angularApp')
 
 }]);
 
-// Still needs:
-
-// JSON file
-// Service?
+app.directive('reddit', function(){
+	return {
+		restrict: 'E',
+		replace: true,
+		template: "<h3>{{post.data.title}}</h3>"
+	};
+});
